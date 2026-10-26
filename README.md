@@ -46,12 +46,14 @@ Features:
 
 ## Installation
 
+```sh
 cd wg-gui
 sudo ./install.sh
-
+```
 
 ## Build and Test
 
+```sh
 cd wg-gui
 . "$HOME/.cargo/env"		# rustup was installed to ~/.cargo
 
@@ -59,10 +61,12 @@ cargo build			# debug binary: target/debug/wg-gui
 cargo build --release		# optimized:	target/release/wg-gui
 
 cargo test			# run tests (GTK tests skip without a display)
+```
 
+```sh
 sudo apt install xvfb		# install once to run GTK tests headless
 xvfb-run -a cargo test -- --test-threads=1	# run all tests, including GTK UI/glade tests
-
+```
 
 ## Run
 
@@ -71,8 +75,12 @@ provides a graphical authentication prompt.
 
 To launch from a terminal in your logged-in desktop session:
 
+```sh
 pkexec ./target/release/wg-gui
+```
 
 If the tray reports that `dbus-launch` is missing, install it with:
 
+```sh
 sudo apt install dbus-x11
+```
