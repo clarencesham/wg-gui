@@ -44,7 +44,13 @@ Features:
     Ubuntu dock / application grid)
 
 
-## Installation
+## Clone
+
+```sh
+git clone https://github.com/clarencesham/wg-gui.git
+```
+
+## Install
 
 ```sh
 cd wg-gui
