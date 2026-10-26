@@ -1,0 +1,9 @@
+Package: wg-gui
+Source: wg-gui
+Version: 1.2
+Section: utils
+Priority: extra
+Architecture: amd64
+Depends: wireguard-tools, resolvconf, libayatana-appindicator3-1
+Maintainer: UnnoTed
+Description: GTK GUI for Wireguard

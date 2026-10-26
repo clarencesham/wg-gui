@@ -1,0 +1,8 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.2
+Type=Application
+Terminal=false
+Exec=pkexec /usr/bin/wg-gui
+Name=wg-gui
+Icon=/usr/share/wg-gui/Icon/128x128/wireguard.png
