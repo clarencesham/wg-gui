@@ -59,11 +59,11 @@ cd wg-gui
 
 cargo build			# debug binary: target/debug/wg-gui
 cargo build --release		# optimized:	target/release/wg-gui
-
-cargo test			# run tests (GTK tests skip without a display)
 ```
 
 ```sh
+cargo test			# run tests (GTK tests skip without a display)
+
 sudo apt install xvfb		# install once to run GTK tests headless
 xvfb-run -a cargo test -- --test-threads=1	# run all tests, including GTK UI/glade tests
 ```
